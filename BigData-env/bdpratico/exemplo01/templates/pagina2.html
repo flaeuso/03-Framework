@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <title>Página2.html</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>bdpratico\exemplo01\templates\pagina2.html</p>
+    {% for regs in pessoas %}
+      <p>{{ regs.nome }} - {{ regs.email }} - {{ regs.celular }}</p>
+    {% endfor %}
+  </body>
+</html>

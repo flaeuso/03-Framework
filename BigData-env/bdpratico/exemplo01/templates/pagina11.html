@@ -1,0 +1,13 @@
+<!DOCTYPE html> <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página11.html</title>
+  </head>
+  <body>
+    <h1>Upload / Import Arquivo!</h1> <p>bdpratico\exemplo01\templates\pagina11.html</p>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="arq_upload" /> <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>

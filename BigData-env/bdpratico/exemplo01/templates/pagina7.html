@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <title>Página7.html</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>bdpratico\exemplo01\templates\pagina7.html</p>
+
+    <h2>{{ data|date:'SHORT_DATE_FORMAT' }}</h2>
+    <h2>{{ data|date:'D d M Y' }}</h2>
+
+    {% for regs in pessoas %}
+      <p>
+        {% if regs.ativo %}
+            <strong>{{forloop.counter}} - {{ regs.nome }} - {{ regs.email }} - {{ regs.celular }} - {{ regs.ativo }}</strong>
+        {% else %}
+            {{forloop.counter}} - {{ regs.nome }} - {{ regs.email }} - {{ regs.celular }} - {{ regs.ativo }}
+        {% endif %}
+      </p>
+    {% endfor %}
+  </body>
+</html>
