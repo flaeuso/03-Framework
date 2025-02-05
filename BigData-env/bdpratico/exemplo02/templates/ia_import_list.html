@@ -1,0 +1,64 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>IA Import.html</title>
+</head>
+<body>
+    <h1>Arquivo Importado!</h1>
+    <p>bdpratico\exemplo02\templates\ia_import_list.html</p>
+
+    <div class="container">
+        <div class="row" style="line-height: 1;">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Grupo</th>
+                            <th>mdw</th>
+                            <th>latw</th>
+                            <th>tmcw</th>
+                            <th>racw</th>
+                            <th>araw</th>
+                            <th>mcw</th>
+                            <th>psdsw</th>
+                            <th>6sw</th>
+                            <th>mdr</th>
+                            <th>...</th>
+                            <th>mcb</th>
+                            <th>psdsb</th>
+                            <th>6sb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for regs in dados %}
+                            <tr>
+                                <td>{{ regs.grupo }}</td>
+                                <td>{{ regs.mdw }}</td>
+                                <td>{{ regs.latw }}</td>
+                                <td>{{ regs.tmcw }}</td>
+                                <td>{{ regs.racw }}</td>
+                                <td>{{ regs.araw }}</td>
+                                <td>{{ regs.mcw }}</td>
+                                <td>{{ regs.psdsw }}</td>
+                                <td>{{ regs.s6w }}</td>
+                                <td>{{ regs.mdr }}</td>
+                                <td>...</td>
+                                <td>{{ regs.mcb }}</td>
+                                <td>{{ regs.psdsb }}</td>
+                                <td>{{ regs.s6b }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
