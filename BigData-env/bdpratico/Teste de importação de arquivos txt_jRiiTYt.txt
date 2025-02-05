@@ -1,0 +1,1 @@
+Teste de importação de arquivos txt;101;5000;
